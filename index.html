@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>7 bit Hamming Code Solver | Error Detector & Corrector</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+     <!--heading of the page-->
+     <div class="columns">
+      <div class="column">
+        <br>
+        <h1 class="title has-text-centered mt-5 pageheading">7 bit Hamming code Solver >_</h1>
+        <h1 class="title has-text-centered mt-5 pageheading is-size-4">Error Detection and Correction_</h1>
+      </div>
+  </div>
+  <!--selecting even or odd parity-->
+  <div class="columns is-centered mt-2 has-text-centered is-vcentered">
+      <div class="column is-half">
+<div class="control">
+  Select parity bit_
+<label class="radio"> 
+  <input type="radio" name="choice" value="EVEN" id="choice-even">
+  Even parity
+</label>
+<label class="radio">
+  <input type="radio" name="choice" value="ODD" id="choice-odd">
+  Odd parity
+</label>
+</div>
+      </div>
+  </div>
+
+   <!--writing the 7 bit hamming code-->
+   <div class="columns is-centered mt-2 has-text-centered is-vcentered">
+    <div class="column is-half">
+<input class="input is-rounded" id="hamming-code" type="text" placeholder="Enter the 7 bit hamming code_" onKeyPress="if(this.value.length==7) return false;" oninput="this.value = this.value.replace(/[^0-1.]/g, '').replace(/(\..*)\./g, '$1');">
+    </div>
+</div>
+
+<div class="columns is-centered has-text-centered is-vcentered">
+    <div class="column">
+        <button class="button is-success is-light mb-3 is-rounded" onclick="solved()"> <i class="fas fa-check-circle"></i> &nbsp; Solve</button>
+    </div>
+</div>
+
+<!--previewing the hamming code and its datas and parity-->
+<div class="container">
+    <div class="columns">
+        <div class="column">
+            <h1 class="is-size-4 mb-2">Entered by User >_</h1>
+           <h1 class="is-size-5">Hamming code_ <span id="hamming-value" class="is-size-6"></span></h1>
+           <h1 class="is-size-5 mb-2">Parity type_ <span id="parity-type" class="is-size-6"></span></h1>
+           <br><br>
+           <h1 class="is-size-5">Data Bits (4 bit) >_</h1>
+           <h1 class="is-size-6">D<sub>3</sub> = <span id="d-three"></span></h1>
+           <h1 class="is-size-6">D<sub>5</sub> = <span id="d-five"></span></h1>
+           <h1 class="is-size-6">D<sub>6</sub> = <span id="d-six"></span></h1>
+           <h1 class="is-size-6">D<sub>7</sub> = <span id="d-seven"></span></h1>
+           <br><br>
+           <h1 class="is-size-5">Parity Bits (3 bit) >_</h1>
+           <h1 class="is-size-6">P<sub>1</sub> = <span id="p-one"></span></h1>
+           <h1 class="is-size-6">P<sub>2</sub> = <span id="p-two"></span></h1>
+           <h1 class="is-size-6">P<sub>4</sub> = <span id="p-four"></span></h1>
+        </div>
+        <div class="column">
+            <h1 class="is-size-4 mb-2">Error Detection >_</h1>
+            <h1 class="is-size-5">P<sub>4</sub> = <span id="updated-p-four" class="is-size-6"></span></h1>
+            <h1 class="is-size-5">P<sub>2</sub> = <span id="updated-p-two" class="is-size-6"></span></h1>
+            <h1 class="is-size-5 mb-3">P<sub>1</sub> = <span id="updated-p-one" class="is-size-6"></span></h1>
+<br>
+            <h1 class="is-size-4 mb-2">Result >_</h1>
+            <h1 class="is-size-5" id="error-msg"></h1>
+        </div>
+        <div class="column">
+            <h1 class="is-size-4 mb-2">Error Correction >_</h1>
+            <h1 class="is-size-5 has-text-success" id="final-ans"></h1>
+        </div>
+    </div>
+</div>
+<br><br><br><br><br><br>
+<div class="submain">
+<div class="child">
+  ☕ v1.0 Developed by <a href="https://www.aryamitrachaudhuri.com">Aryamitra Chaudhuri</a>
+</div>
+</div>
+<script src="app.js"></script>
+  </body>
+</html>

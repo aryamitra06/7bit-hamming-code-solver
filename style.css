@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+body{
+    background: rgb(30,60,114);
+    background: linear-gradient(90deg, rgba(30,60,114,1) 0%, rgba(42,82,152,1) 100%);
+    color: rgb(255, 255, 255) !important;
+    font-family: 'Source Code Pro', monospace;
+    max-height:max-content;
+}
+.submain{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.6rem;
+}
+
+.pageheading{
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 2rem;
+}
+
+a{
+    color: white;
+}
+
+.radio{
+    color: rgb(255, 255, 255);
+}
+.radio:hover{
+    color: rgb(77, 165, 241);
+}
