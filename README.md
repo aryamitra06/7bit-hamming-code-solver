@@ -1,5 +1,6 @@
 
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+![logo](https://user-images.githubusercontent.com/79497113/141037759-5db14d65-1360-4afc-ae2d-f20f40a872c0.PNG)
+
 
 # 7 BIT HAMMING CODE SOLVER
 A simple and lightweight web application which helps you to find, detect error in the specific bit and solve the error of the 7 bit hamming code entered by the user!
@@ -24,7 +25,11 @@ https://aryamitrachaudhuri.com/7bit-hamming-code-solver/
 
 ## Screenshots
 
-![App Screenshot]![ss4](https://user-images.githubusercontent.com/79497113/141037487-7f864425-d880-4fc9-8fe2-3d3ae0f369d9.PNG)
+![ss1](https://user-images.githubusercontent.com/79497113/141037649-89015fb7-0559-4828-a270-f44d862c5d54.PNG)
+![ss2](https://user-images.githubusercontent.com/79497113/141037660-96dd9693-f254-425c-b738-1e75877deb3a.PNG)
+![ss4](https://user-images.githubusercontent.com/79497113/141037665-d82e3450-f2c0-4d9d-b645-2d0ba4173e69.PNG)
+![ss3](https://user-images.githubusercontent.com/79497113/141037671-81d99f26-01e5-4390-8bba-7c9763827090.PNG)
+
 
 
 
