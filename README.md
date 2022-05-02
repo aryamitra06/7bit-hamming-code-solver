@@ -7,7 +7,7 @@ A simple and lightweight web application which helps you to find, detect error i
 
 ## Use App
 
-https://aryamitrachaudhuri.com/7bit-hamming-code-solver/
+https://aryamitrachaudhuri.live/7bit-hamming-code-solver/
 
 
 ## Features
